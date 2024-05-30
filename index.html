@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEEB;
+        }
+        .house {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #8B4513;
+            transform: translateY(50px);
+        }
+        .roof {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid #B22222;
+        }
+        .door {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 50px;
+            height: 100px;
+            background-color: #654321;
+            transform: translateX(-50%);
+        }
+        .window {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ADD8E6;
+        }
+        .window.left {
+            top: 50px;
+            left: 20px;
+        }
+        .window.right {
+            top: 50px;
+            right: 20px;
+        }
+    </style>
+    <title>CSS Art Example</title>
+</head>
+<body>
+    <div class="house">
+        <div class="roof"></div>
+        <div class="door"></div>
+        <div class="window left"></div>
+        <div class="window right"></div>
+    </div>
+</body>
+</html>
